@@ -3,55 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>生活ボードシリーズ</title>
+  <title>生活ボードシリーズ｜子どもの予定・できた回数・時間・毎日の支度</title>
+  <meta name="description" content="今日の予定、できた回数、あと何分、毎日のやること。お子さんと確かめたいことから選べる4つの生活ボードアプリ。無料・広告なし・アカウント登録なし。">
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; line-height: 1.8; margin: 32px; color: #222; }
-    main { max-width: 760px; margin: 0 auto; }
-    a { color: #2E75C9; }
-    section { margin-top: 32px; padding: 24px; border: 1px solid #eee; border-radius: 16px; }
-    h2 { margin-top: 0; }
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", sans-serif; color: #292823; background: #fffaf2; line-height: 1.8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-size: 1rem; }
+    main { max-width: 1040px; margin: 0 auto; padding: 40px 24px 56px; }
+    h1 { margin: 0 0 12px; font-size: clamp(1.6rem, 4vw, 2.2rem); line-height: 1.4; }
+    h2 { font-size: 1.5rem; line-height: 1.5; margin: 0 0 8px; }
+    p { margin: 0 0 16px; }
+    a { color: #155b99; text-underline-offset: .2em; }
+    a:focus-visible { outline: 3px solid #155b99; outline-offset: 4px; }
+    .intro { max-width: 720px; }
+    .assurance { color: #41513b; font-weight: 600; }
+    .choices { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+    .choices a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 16px; background: #fff; border: 1px solid #cfc9bd; border-radius: 100px; }
+    .apps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+    article { display: flex; flex-direction: column; min-width: 0; background: #fff; border: 1px solid #ded7c9; border-top: 5px solid #b44b16; border-radius: 16px; padding: 24px; scroll-margin-top: 16px; overflow-wrap: anywhere; }
+    article:nth-child(2) { border-top-color: #347047; }
+    article:nth-child(3) { border-top-color: #23699d; }
+    article:nth-child(4) { border-top-color: #785587; }
+    .app-name { font-weight: 700; margin-bottom: 12px; }
+    .compatibility, .store-name { color: #59554d; font-size: .875rem; }
+    .try { padding: 14px 16px; background: #f6f5f1; border-radius: 10px; }
+    .try strong { display: block; }
+    .download { margin-top: auto; margin-bottom: 12px; padding-top: 8px; }
+    .download a { display: flex; justify-content: center; align-items: center; min-height: 52px; padding: 12px 16px; background: #a84413; border-radius: 10px; color: #fff; font-weight: 700; text-align: center; text-decoration: none; }
+    .download a:hover { background: #85350f; }
+    .support { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0; padding: 0; list-style: none; font-size: .875rem; }
+    .support a { display: inline-flex; align-items: center; min-height: 44px; }
+    footer { margin-top: 28px; color: #59554d; }
+    .skip { position: absolute; left: 16px; top: -100px; padding: 12px; background: #fff; }
+    .skip:focus { top: 8px; }
+    @media (max-width: 660px) {
+      main { padding: 28px 16px 40px; }
+      .apps { grid-template-columns: 1fr; }
+      article { padding: 20px; }
+    }
   </style>
 </head>
 <body>
+<a class="skip" href="#apps">アプリ一覧へ進む</a>
 <main>
-  <h1>生活ボードシリーズ</h1>
-  <p>子どもの毎日の生活を、親子でやさしく見守るためのアプリシリーズです。</p>
-
-  <section>
-    <h2>せいかつボード</h2>
-    <p><a href="https://apps.apple.com/jp/app/id6787595817">App Storeで見る</a></p>
-    <ul>
-      <li><a href="./support.html">サポート</a></li>
-      <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>生活ボード カウント</h2>
-    <p><a href="https://apps.apple.com/jp/app/id6794626819">App Storeで見る</a></p>
-    <ul>
-      <li><a href="./count-support.html">サポート</a></li>
-      <li><a href="./count-privacy-policy.html">プライバシーポリシー</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>生活ボード タイマー</h2>
-    <p>App Store公開準備中</p>
-    <ul>
-      <li><a href="./timer-support.html">サポート</a></li>
-      <li><a href="./timer-privacy-policy.html">プライバシーポリシー</a></li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>生活ボードルーティン</h2>
-    <p>App Store公開準備中</p>
-    <ul>
-      <li><a href="./routine-support.html">サポート</a></li>
-      <li><a href="./routine-privacy-policy.html">プライバシーポリシー</a></li>
-    </ul>
-  </section>
+  <header class="intro">
+    <h1>生活ボードシリーズ</h1>
+    <p>「今日は何がある？」「あと何分？」「まだ終わっていないことは？」<br>子どもが自分で見て確かめる、親子のための4つのアプリです。</p>
+    <p class="assurance">すべて無料・広告なし・アカウント登録なし</p>
+    <p>毎日の中で、お子さんと確かめたいことから選んでください。</p>
+  </header>
+  <nav class="choices" aria-label="確かめたいことから選ぶ">
+    <a href="#schedule">今日の予定</a>
+    <a href="#count">できた回数</a>
+    <a href="#timer">あと何分</a>
+    <a href="#routine">終わった・まだ</a>
+  </nav>
+  <div class="apps" id="apps">
+    <article id="schedule" aria-labelledby="schedule-title">
+      <h2 id="schedule-title">今日は何がある？</h2>
+      <p class="app-name">生活ボード</p>
+      <p>今日の曜日と予定、楽しみなイベントまで「あと何回寝たら」を確認。朝の予定確認や、お出かけを待つときに。</p>
+      <p class="try"><strong>まずは</strong>アプリを開いて、今日の曜日と見本の予定をお子さんと見てみてください。</p>
+      <p class="compatibility">iPhone・iPad ／ iOS・iPadOS 17以上</p>
+      <p class="store-name">App Storeでは「せいかつボード」と表示されます。</p>
+      <p class="download"><a href="https://apps.apple.com/jp/app/id6787595817" aria-label="生活ボードをApp Storeで無料ダウンロード">App Storeで無料ダウンロード</a></p>
+      <ul class="support" aria-label="生活ボードのサポート">
+        <li><a href="./support.html">使い方・お問い合わせ</a></li>
+        <li><a href="./privacy-policy.html">プライバシー</a></li>
+      </ul>
+    </article>
+    <article id="count" aria-labelledby="count-title">
+      <h2 id="count-title">できた！を数えたい</h2>
+      <p class="app-name">生活ボードカウント</p>
+      <p>はみがきやお手伝いなどの「できた」を1タップで記録。今日の回数と最近7日間の積み重ねを、親子で振り返れます。</p>
+      <p class="try"><strong>まずは</strong>見本から1つ選び、「できた！」を押してみてください。間違えたら「もどす」で取り消せます。</p>
+      <p class="compatibility">iPhone ／ iOS 17以上</p>
+      <p class="store-name">App Storeでは「生活ボード カウント」と表示されます。</p>
+      <p class="download"><a href="https://apps.apple.com/jp/app/id6794626819" aria-label="生活ボードカウントをApp Storeで無料ダウンロード">App Storeで無料ダウンロード</a></p>
+      <ul class="support" aria-label="生活ボードカウントのサポート">
+        <li><a href="./count-support.html">使い方・お問い合わせ</a></li>
+        <li><a href="./count-privacy-policy.html">プライバシー</a></li>
+      </ul>
+    </article>
+    <article id="timer" aria-labelledby="timer-title">
+      <h2 id="timer-title">あと何分？を見たい</h2>
+      <p class="app-name">生活ボードタイマー</p>
+      <p>残り時間を大きな数字と減っていく色で表示。遊び、お片づけ、出発前など、終わりの時間を確かめたいときに。</p>
+      <p class="try"><strong>まずは</strong>用途と短い時間を選んでスタート。数字と色が減っていく様子を一緒に見てみてください。</p>
+      <p class="compatibility">iPhone ／ iOS 17以上</p>
+      <p class="store-name">App Storeでは「生活ボード タイマー」と表示されます。</p>
+      <p class="download"><a href="https://apps.apple.com/jp/app/id6798131788" aria-label="生活ボードタイマーをApp Storeで無料ダウンロード">App Storeで無料ダウンロード</a></p>
+      <ul class="support" aria-label="生活ボードタイマーのサポート">
+        <li><a href="./timer-support.html">使い方・お問い合わせ</a></li>
+        <li><a href="./timer-privacy-policy.html">プライバシー</a></li>
+      </ul>
+    </article>
+    <article id="routine" aria-labelledby="routine-title">
+      <h2 id="routine-title">何が終わって、何がまだ？</h2>
+      <p class="app-name">生活ボードルーティン</p>
+      <p>朝の支度、帰宅後、寝る前のやることを一覧で確認。終わったものから好きな順にチェックでき、残りも同じ画面で確かめられます。</p>
+      <p class="try"><strong>まずは</strong>今日の見本から、終わったやることを1つチェック。「できたあと」の絵と文への変化を見てみてください。</p>
+      <p class="compatibility">iPhone ／ iOS 17以上</p>
+      <p class="download"><a href="https://apps.apple.com/jp/app/id6807180282" aria-label="生活ボードルーティンをApp Storeで無料ダウンロード">App Storeで無料ダウンロード</a></p>
+      <ul class="support" aria-label="生活ボードルーティンのサポート">
+        <li><a href="./routine-support.html">使い方・お問い合わせ</a></li>
+        <li><a href="./routine-privacy-policy.html">プライバシー</a></li>
+      </ul>
+    </article>
+  </div>
+  <footer>
+    <p>必要なアプリを1つから。登録した予定・記録・画像は端末内に保存され、アプリから外部サーバーへ送信されません。詳しい使い方やデータの扱いは、各アプリのサポート・プライバシーページで確認できます。</p>
+  </footer>
 </main>
 </body>
 </html>
